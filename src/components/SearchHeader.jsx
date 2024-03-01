@@ -7,7 +7,7 @@ import SearchHeaderOptions from "./SearchHeaderOptions";
 
 const SearchHeader = () => {
   return (
-    <header className="sticky top-0">
+    <header className="sticky top-0 bg-black">
       <div className="flex w-full p-6 items-center justify-between">
         <Link href="/">
           <Image
