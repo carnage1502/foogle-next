@@ -2,8 +2,9 @@ import ImageSearchResults from "@/components/ImageSearchResults";
 import Link from "next/link";
 
 const ImageSearchPage = async ({ searchParams }) => {
+  const startIndex = searchParams.start || "1";
   const respone = await fetch(
-    `https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}'}&searchType=image`
+    `https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}'}&searchType=image&start=${startIndex}`
   );
   if (!respone.ok) throw new Error("Something went wrong!☹️");
   const data = await respone.json();
