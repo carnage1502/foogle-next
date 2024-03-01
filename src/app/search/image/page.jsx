@@ -3,6 +3,7 @@ import Link from "next/link";
 
 const ImageSearchPage = async ({ searchParams }) => {
   const startIndex = searchParams.start || "1";
+  await new Promise((resolve) => setTimeout(resolve, 1000)); //for checking the loader can remove it its optional
   const respone = await fetch(
     `https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}'}&searchType=image&start=${startIndex}`
   );
