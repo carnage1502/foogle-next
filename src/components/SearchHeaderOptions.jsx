@@ -14,7 +14,7 @@ export default function SearchHeaderOptions() {
     );
   };
   return (
-    <div className="flex space-x-2 select-none border-b w-full justify-center lg:justify-start lg:pl-52 text-gray-700 text-sm">
+    <div className="flex space-x-2 select-none border-b border-[#3c4043] w-full justify-center lg:justify-start lg:pl-52 text-gray-700 text-sm">
       <div
         onClick={() => selectTab("All")}
         className={`flex items-center space-x-1 border-b-4 border-transparent active:text-blue-500 cursor-pointer pb-3 px-2 ${

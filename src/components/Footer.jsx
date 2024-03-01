@@ -3,7 +3,7 @@ import CountryLoc from "./CountryLoc";
 const Footer = () => {
   return (
     <footer className="absolute bottom-0 text-sm text-white bg-neutral-900 w-full">
-      <div className="border-b px-8 py-3">
+      <div className="border-b border-[#3c4043] px-8 py-3">
         <CountryLoc />
       </div>
       <div className="flex flex-col sm:flex-row justify-between items-center px-8 py-3 space-y-7 sm:space-y-0">
