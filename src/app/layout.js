@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 export const metadata = {
   title: "Foogle",
   description:
-    "An open source Google clone built with Nextjs and tailwindcss by carnage",
+    "An open source Google clone built with Nextjs and tailwindcss by Carnage",
 };
 
 export default function RootLayout({ children }) {
