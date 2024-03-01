@@ -3,6 +3,7 @@ import Link from "next/link";
 import SearchBox from "./SearchBox";
 import { RiSettings3Line } from "react-icons/ri";
 import { TbGridDots } from "react-icons/tb";
+import SearchHeaderOptions from "./SearchHeaderOptions";
 
 const SearchHeader = () => {
   return (
@@ -12,10 +13,9 @@ const SearchHeader = () => {
           <Image
             alt="logo"
             src="/foogle.svg"
-            width="120"
-            height="40"
+            width={120}
+            height={40}
             priority
-            style={{ width: "auto" }}
           />
         </Link>
         <div className="flex-1">
@@ -29,6 +29,7 @@ const SearchHeader = () => {
           Sign in
         </button>
       </div>
+      <SearchHeaderOptions />
     </header>
   );
 };
